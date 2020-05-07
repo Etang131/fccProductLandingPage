@@ -1,0 +1,185 @@
+/*
+#C4A69D Silver pink
+#98A886 Artichoke
+#465C69 Black Coral
+#363457 Space Cadet
+#735290 Royal purple
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  font-size: 1.3125rem;
+}
+
+/*Navagation */
+header {
+  background-color: #98a886;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-img {
+  display: none;
+}
+
+li,
+a {
+  color: black;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  margin-top: 15px;
+}
+
+li:hover {
+  background-color: #c4a69d;
+  padding: 2px 5px;
+}
+
+h1,
+h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 0;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+/* Intro Section*/
+.intro {
+  background-color: #465c69;
+  padding: 10vh 0;
+}
+
+.introTitle,
+.introText {
+  text-align: center;
+}
+
+/* Show case section*/
+.showCaseTitle {
+  margin-bottom: 5px;
+}
+
+.showCase p {
+  margin-bottom: 15px;
+}
+
+#showCaseImage {
+  margin-top: 15px;
+  max-width: 100%;
+}
+
+/* Benefits Section*/
+
+.benefits {
+  margin-top: -50px;
+}
+
+.benefitsTitle {
+  margin-top: 50px;
+}
+
+/* Video Section */
+#productVideo {
+  padding: 0;
+}
+
+#productVideo h2 {
+  margin-bottom: 25px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* form section */
+.emailList {
+  margin-top: 5vh;
+  background-color: #465c69;
+}
+
+form {
+  text-align: center;
+}
+
+#email {
+  padding: 5px 3px;
+}
+
+.btn {
+  border: #363457;
+  background-color: #363457;
+  padding: 5px 5px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5em;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #header-img {
+    display: inline-block;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  #nav-bar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  #nav-bar ul li {
+    padding: 0 10px;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 15vh 0 10vh 0;
+  }
+}
